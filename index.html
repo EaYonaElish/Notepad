@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Notepad</title>
+    <script type="text/javascript">
+    function  load_text() {
+      document.getElementById("output").value="Text....";
+    }
+     function bold_Click() {
+       document.getElementById('output').style.fontWeight="bold";
+     }
+     function underline() {
+       document.getElementById('output').style.textDecoration="underline";
+     }
+     function italic() {
+       document.getElementById('output').style.fontStyle="Italic";
+            }
+      function normal() {
+        document.getElementById('output')style.fontStyle="normal";
+        document.getElementById('output')style.fontWeight="normal";
+        document.getElementById('output')style.textDecoration="none";
+      }
+    </script>
+    </head>
+  <h2 style="fontstyle:Verdana">Simple Notepad</h2>
+  <body onload="load_text()">
+    <div style="align:center">
+    <form name="controls" id="controls">
+      <select style="width:300px">
+      <option selected>Fonts</option>
+      <option>Arial Black</option>
+      <option>Verdana</option>
+      </select>
+      <INPUT id="button1" type="button" value="B" name="button1" style="FONT-WEIGHT: bold; WIDTH: 26px; HEIGHT: 24px" size="28" onclick="bold_Click()">
+
+    <INPUT type="button" value="I" style="WIDTH: 25px; FONT-STYLE: italic; HEIGHT: 24px" size="30" onclick="italic_click()">
+
+
+    <INPUT id="button1" style="WIDTH: 26px; HEIGHT: 24px;" type="button" size="8" value="N" name="button1" onclick="normal_click()">
+
+    <BR/><TEXTAREA style="WIDTH: 399px; HEIGHT: 182px" id="output" name="output" rows="9" wrap="virtual" cols=48></TEXTAREA><BR>
+
+    <P><INPUT TYPE="reset" VALUE="Clear"></P>
+
+    </FORM>
+
+    </BODY>
+    </form>
+
+  </body>
+</html>
